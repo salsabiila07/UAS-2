@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="arena">
+    <h1>🚀 Mission Quiz</h1>
+
+    <div class="info">
+        <span id="question-number">Soal 1</span>
+        <span id="timer">⏱ 15</span>
+        <span id="score">Skor: 0</span>
+    </div>
+
+    <!-- SOAL (HIDDEN) -->
+    <div id="question-bank" hidden>
+
+        <div class="question" data-answer="0">
+            <p>HTML adalah singkatan dari?</p>
+            <div class="option">Hyper Text Markup Language</div>
+            <div class="option">High Text Machine Language</div>
+            <div class="option">Hyper Tool Markup</div>
+            <div class="option">Home Text Language</div>
+        </div>
+
+        <div class="question" data-answer="1">
+            <p>CSS digunakan untuk?</p>
+            <div class="option">Mengolah data</div>
+            <div class="option">Mengatur tampilan website</div>
+            <div class="option">Membuat database</div>
+            <div class="option">Menjalankan server</div>
+        </div>
+
+        <div class="question" data-answer="2">
+            <p>JavaScript berjalan di?</p>
+            <div class="option">Server</div>
+            <div class="option">Database</div>
+            <div class="option">Browser</div>
+            <div class="option">Compiler</div>
+        </div>
+
+        <div class="question" data-answer="1">
+            <p>Tag HTML untuk paragraf adalah?</p>
+            <div class="option">div</div>
+            <div class="option">p</div>
+            <div class="option">span</div>
+            <div class="option">br</div>
+        </div>
+
+        <div class="question" data-answer="1">
+            <p>Ekstensi file JavaScript adalah?</p>
+            <div class="option">.java</div>
+            <div class="option">.js</div>
+            <div class="option">.json</div>
+            <div class="option">.html</div>
+        </div>
+
+    </div>
+
+    <!-- AREA QUIZ -->
+    <div id="quiz-box"></div>
+
+    <button id="nextBtn" onclick="nextQuestion()" disabled>Soal Berikutnya</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
